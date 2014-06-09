@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Accordian</title>
+
+        <style type="text/css">
+        <!--
+         #box{
+	          width: 310px;
+	          height: 310px;
+	          padding: .5em;
+	          border: 1px solid black
+	          
+	          }
+        -->
+        </style>
+      <link href="css/south-street/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.4.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+
+                $("#accordion").accordion();
+                
+            });
+
+        </script>
+
+    </head>
+    <body>
+        <h1 id="hello">Set up some  entities and attributes.</h1>
+        <div id="accordion">
+        	<h3>Sessions</h3>
+        	<div>
+        		<p>Session entities and attributes
+				</p>
+				<div id = "box">
+				<img src="css/south-street/images/session.png" width="210px" height="210px">
+				</div>
+        	</div>
+        	<h3>Patient medicalhistory form
+			</h3>
+        	<div>
+        		<p>Patient medicalhistory entities and attributes
+				</p>
+				<div id = "">
+				<img src="css/south-street/images/medicalhistory.png" >
+				</div>
+        	</div>
+        	<h3>Visit form:
+			</h3>
+        	<div>
+        		<p>Visit form entities and attributes
+				</p>
+				<div id = "">
+				<img src="css/south-street/images/visitform.png" >
+				</div>
+        	</div>
+        	<h3>Patient Information:
+			</h3>
+			<div>
+        	
+        		<p>Patient Information entities and attributes
+				</p>
+				<div id = "">
+				<img src="css/south-street/images/patient.png" >
+				</div>
+        	</div>
+			
+        </div><!-- end accordian -->
+    </body>
+</html>

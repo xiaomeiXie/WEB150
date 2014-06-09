@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Datepicker</title>
+
+        <style type="text/css">
+        <!--
+        -->
+        </style>
+      <link href="css/south-street/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.4.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+
+                $("#datepicker").datepicker();
+                $("#button01").click(getDate);
+            });
+			function getDate(){
+				var date = $("#datepicker").val();
+				alert(date);
+				
+				}
+        </script>
+
+    </head>
+    <body>
+        <h1 id="hello">jQuery UI Datepicker</h1>
+        <label for="datepicker" >pick a date
+        <input  id="datepicker">
+       </label>
+        <input type="button" id="button01"value="Pick a date">
+    </body>
+</html>

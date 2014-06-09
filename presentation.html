@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Accordian</title>
+
+        <style type="text/css">
+        <!--
+         #box{
+	          width: 220px;
+	          height: 220px;
+	          padding: .5em;
+	          border: 1px solid black
+	          
+	          }
+        -->
+        </style>
+      <link href="css/south-street/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.4.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+
+                $("#accordion").accordion();
+                
+            });
+
+        </script>
+
+    </head>
+    <body>
+        <h1 id="hello">Make a list of business rules</h1>
+        <div id="accordion">
+        	<h3>Sessions</h3>
+        	<div>
+        		<p>Are one hour long, twice a month, for 18 months (36 sessions max)
+				</p>
+				<div id = "box">
+				<img src="css/south-street/images/doctor.jpg" width="210px" height="210px">
+				</div>
+        	</div>
+        	<h3>Doctor</h3>
+        	<div>
+        		<ul>
+        		<li>Only see 20 patients each
+        		</li>
+        		<li>Only be able to see their own patients in the study
+        		</li>
+        		<li>Not know which drug they are giving
+        		</li>
+        		<li>Observe patients and record data for the study
+        		</li>
+        		<li>Record data per session with patients in the study
+        		</li>
+        		<li>
+        		Make recommendation to whether a patient should or should not be a part of the study
+        		</li>
+        		<li>Doctors will be able to edit/audit until study is complete (locked)
+        		</li>
+        		</ul>
+        	</div>
+        	<h3>Patient:
+			</h3>
+        	<div>
+        		<p>Only 400 patients to start may be in the study
+				</p>
+        		<ul>
+        			<li>Patients will not know which drug they are taking
+					</li>
+        			<li>Patients fills out initial personal form for doctors (and supervisors)
+					</li>
+        			<li>Patients will offer times available for session via doctor's calendar
+					</li>
+					<li>Patients can cancel 2 hours before session (time lock)
+					</li>
+					<li>Patients can only be dropped from the study.  No additional patients will be added once the study begins
+					</li>
+					<li>After the study starts patients can only edit their future session time/date (-2hrs) and contact information
+					</li>
+					<li>Patients can see personal information, sessions created and accompanying doctor's notes
+					</li>
+					<li>
+					Patients will be only be able to edit/audit contact information
+					</li>
+					<li>Patient record will become 'dead', but information can still be read-only
+					</li>
+        		</ul>
+        	</div>
+        	<h3>Supervisor:
+			</h3>
+			<div>
+        	
+        		<ul>
+        			<li>Supervisors will be the only people to know which drug is given to which patient
+					</li>
+        			<li>Supervisors will observe all data 
+					</li>
+        			<li>Supervisors will make decision final of continuation of patients in the study
+					</li>
+					<li>Supervisors will lock all data if a patient leaves the study
+					</li>
+					<li>Supervisors will be able to put an edit/audit lock on the study for doctor's reports when the study is done
+					</li>
+					
+					
+        		</ul>
+        	</div>
+			
+        </div><!-- end accordian -->
+    </body>
+</html>
